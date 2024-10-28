@@ -1,0 +1,166 @@
+{
+  "navBtn": [
+    {
+      "id": 1,
+      "title": "Residential Moving"
+    },
+    {
+      "id": 2,
+      "title": "Commercial Moving"
+    },
+    {
+      "id": 3,
+      "title": "Packing Services"
+    },
+    {
+      "id": 4,
+      "title": "Full-Service Moving"
+    },
+    {
+      "id": 5,
+      "title": "Last-Minute Moving"
+    },
+    {
+      "id": 6,
+      "title": "Same-Day Moving"
+    }
+  ],
+
+  "cards": [
+    {
+      "id": 7,
+      "title": "Apartment and House Moving",
+      "description": "Efficient, seamless moving of any size.",
+      "features": [
+        "Efficient Packing",
+        "Disassembly and Reassembly of Furniture",
+        "Floor and Property Protection"
+      ],
+      "buttons": ["Book Now", "Learn More"]
+    },
+    {
+      "id": 8,
+      "title": "Local Moving",
+      "description": "Quick and affordable moves within your city.",
+      "features": [
+        "Flexible Scheduling",
+        "On-Time Delivery",
+        "Transparent Pricing"
+      ],
+      "buttons": ["Book Now", "Learn More"]
+    },
+    {
+      "id": 9,
+      "title": "Long-Distance Moving",
+      "description": "Reliable, stress-free moves across cities or states.",
+      "features": [
+        "Comprehensive Planning",
+        "Cross-State Compliance",
+        "Secure Transportation and Tracking"
+      ],
+      "buttons": ["Book Now", "Learn More"]
+    },
+    {
+      "id": 10,
+      "title": "Senior Moving",
+      "description": "Compassionate moving services tailored for seniors.",
+      "features": [
+        "Comprehensive Planning",
+        "Cross-State Compliance",
+        "Secure Transportation and Tracking"
+      ],
+      "buttons": ["Book Now", "Learn More"]
+    },
+    {
+      "id": 11,
+      "title": "Military Moving",
+      "description": "Fast, efficient, and reliable moves for military personnel.",
+      "features": [
+        "Quick Deployment Moves",
+        "Government Reimbursement Assistance",
+        "Secure Transport of Personal"
+      ],
+      "buttons": ["Book Now", "Learn More"]
+    },
+    {
+      "id": 12,
+      "title": "Celebrity Moving",
+      "description": "Discreet, high-end moving services for high-profile clients.",
+      "features": [
+        "Private and Confidential Moves",
+        "Premium Packing and Handling",
+        "Customized Logistics and Security Coordination"
+      ],
+      "buttons": ["Book Now", "Learn More"]
+    }
+  ],
+
+  "processes": [
+    {
+      "id": 1,
+      "title": "Initial Consultation and Quote",
+      "description": "We’ll discuss your moving needs and provide a free, detailed quote."
+    },
+    {
+      "id": 2,
+      "title": "Comprehensive Planning",
+      "description": "We create a customized plan to ensure every detail is covered."
+    },
+    {
+      "id": 3,
+      "title": "Packing and Preparation",
+      "description": "Our expert movers carefully pack your items using top-quality materials."
+    }
+  ],
+
+  "processes2": [
+    {
+      "id": 4,
+      "title": "Loading and Transportation",
+      "description": "We securely load your packed items onto our truck and transport them safely to your new destination, using the best routes for timely delivery."
+    },
+    {
+      "id": 5,
+      "title": "Unpacking ",
+      "description": "If you choose unpacking services, we’ll expertly unpack your items and help arrange them in your new space, so you can settle in quickly."
+    },
+    {
+      "id": 6,
+      "title": "Final Inspection",
+      "description": "We conduct a thorough walk-through with you to ensure everything has arrived safely and is in the right place, ensuring your complete satisfaction."
+    }
+  ],
+
+  "benefits": [
+    {
+      "id": 1,
+      "title": "Free Quotes",
+      "description": "We offer no-obligation, free quotes to help you plan your move with confidence. Our transparent process ensures you know exactly what to expect before making any commitments."
+    },
+    {
+      "id": 2,
+      "title": "Licensed and Insured",
+      "description": "We are fully licensed and insured to provide you with peace of mind throughout the entire moving process. Your belongings are protected, and you can trust us to handle them with care and professionalism."
+    },
+    {
+      "id": 3,
+      "title": "Upfront and Honest Pricing",
+      "description": "With us, there are no hidden fees or surprise charges. We provide clear, upfront pricing so you can budget for your move without any uncertainty"
+    },
+    {
+      "id": 4,
+      "title": "Expert Packing Services",
+      "description": "With us, there are no hidden fees or surprise charges. We provide clear, upfront pricing so you can budget for your move without any uncertainty"
+    },
+    {
+      "id": 5,
+      "title": "Comprehensive Planning",
+      "description": "Our team handles every detail, from start to finish, ensuring a well-organized and efficient move. We create a customized plan tailored to your specific needs, so nothing is overlooked."
+    },
+    {
+      "id": 6,
+      "title": "Flexible Scheduling",
+      "description": "We understand that timing is everything, which is why we offer flexible scheduling to fit your needs. Whether you need to move on weekends or evenings, we'll work around your schedule to make it happen."
+    }
+  ]
+}
