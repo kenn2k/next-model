@@ -1,4 +1,4 @@
-import { Box, Card } from "@mui/material";
+import { Box, Button, Card } from "@mui/material";
 
 interface CardItemProps {
   id: string | number;
@@ -20,6 +20,10 @@ interface UniversalCardLayoutProps {
     maxWidth?: string | number;
     display?: { [key: string]: string };
   };
+  buttonProps?: {
+    text?: string;
+    sx?: object;
+  };
 }
 
 const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
@@ -27,6 +31,10 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
   data,
   CardItemComponent,
   containerProps = {},
+  buttonProps = {
+    text: "Calculate Price",
+    sx: { mt: 3 },
+  },
 }) => {
   const renderBenefits = (items: CardItemProps[]) => {
     const firstGroup = items.slice(0, 3);
@@ -169,6 +177,16 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
                 title={card.title}
               />
             ))}
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                ...buttonProps.sx,
+                display: variant === "workflow" ? "block" : "none",
+              }}
+            >
+              {buttonProps.text}
+            </Button>
           </Box>
         </Card>
       </Box>

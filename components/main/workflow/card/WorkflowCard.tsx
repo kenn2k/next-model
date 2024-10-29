@@ -13,6 +13,15 @@ const WorkflowCard = () => {
         processes2: data.processes2,
       }}
       CardItemComponent={WorkFlowCardItem}
+      buttonProps={{
+        text: "Calculate Price",
+        sx: {
+          mt: 3,
+          px: 2,
+          borderRadius: 4,
+          color: "white",
+        },
+      }}
     />
   );
 };
