@@ -28,8 +28,8 @@ const Workflow = () => {
           alt="image"
         />
         <WorkflowCard />
-        <Slider />
       </SectionLayout>
+      <Slider />
     </>
   );
 };

@@ -20,46 +20,44 @@ const WorkFlowCardItem = ({ title, description }: CardProps) => {
   };
   return (
     <>
-      <Box>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          {icons[title] && (
-            <Box
-              sx={{
-                marginRight: 2,
-                backgroundColor: "success.main",
-                borderRadius: "50%",
-                color: "white",
-                padding: "0.3rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              {icons[title]}
-            </Box>
-          )}
-          <Typography
-            color="info"
-            component="div"
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        {icons[title] && (
+          <Box
             sx={{
-              lineHeight: { xs: 1, lg: 2 },
-              fontWeight: { sm: 400, lg: 500 },
-              typography: { xs: "h6", md: "h5" },
+              marginRight: 2,
+              backgroundColor: "success.main",
+              borderRadius: "50%",
+              color: "white",
+              padding: "0.3rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            {title}
-          </Typography>
-        </Box>
+            {icons[title]}
+          </Box>
+        )}
         <Typography
           color="info"
-          variant="body1"
           component="div"
-          lineHeight={1.5}
-          mb={1.5}
+          sx={{
+            lineHeight: { xs: 1, lg: 2 },
+            fontWeight: { sm: 400, lg: 500 },
+            typography: { xs: "h6", md: "h5" },
+          }}
         >
-          {description}
+          {title}
         </Typography>
       </Box>
+      <Typography
+        color="info"
+        variant="body1"
+        component="div"
+        lineHeight={1.5}
+        mb={1.5}
+      >
+        {description}
+      </Typography>
     </>
   );
 };
