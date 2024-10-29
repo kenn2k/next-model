@@ -43,7 +43,7 @@ const WorkFlowCardItem = ({ title, description }: CardProps) => {
             component="div"
             sx={{
               lineHeight: { xs: 1, lg: 2 },
-              fontWeight: 500,
+              fontWeight: { sm: 400, lg: 500 },
               typography: { xs: "h6", md: "h5" },
             }}
           >

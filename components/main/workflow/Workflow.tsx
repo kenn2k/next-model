@@ -5,12 +5,13 @@ import { Box, CardMedia, Typography } from "@mui/material";
 const Workflow = () => {
   return (
     <>
-      <Box height="100%" position="relative" mt={11}>
+      <Box height="100%" position="relative" mt={14}>
         <Typography
           variant="h3"
           sx={{ typography: { xs: "h4", md: "h3" } }}
           lineHeight={1}
           color="info"
+          fontWeight="500"
         >
           How We Work
         </Typography>

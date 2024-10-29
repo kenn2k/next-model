@@ -162,5 +162,45 @@
       "title": "Flexible Scheduling",
       "description": "We understand that timing is everything, which is why we offer flexible scheduling to fit your needs. Whether you need to move on weekends or evenings, we'll work around your schedule to make it happen."
     }
+  ],
+
+  "reviews": [
+    {
+      "id": 1,
+      "title": "Last-Minute Move Made Easy",
+      "content": "I can’t say enough good things about this company! I had a last-minute move, and they managed to accommodate me without any issues. The team worked fast but with incredible attention to detail. They were also super polite and kept me updated throughout the whole process.",
+      "author": "Emily R."
+    },
+    {
+      "id": 2,
+      "title": "Professional, Stress-Free Service",
+      "content": "Absolutely fantastic service! The movers arrived right on time, were incredibly professional, and took great care with all of my belongings. The team made the entire process stress-free and quick. Highly recommend!",
+      "author": "Sarah M."
+    },
+    {
+      "id": 3,
+      "title": "Last-Minute Move Made Easy",
+      "content": "I can’t say enough good things about this company! I had a last-minute move, and they managed to accommodate me without any issues. The team worked fast but with incredible attention to detail. They were also super polite and kept me updated throughout the whole process.",
+      "author": "Emily R."
+    }
+  ],
+
+  "accordionData": [
+    {
+      "title": "Are you licensed and insured?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "How do I make a reservation?",
+      "content": "Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+    },
+    {
+      "title": "Are there any hidden fees?",
+      "content": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui."
+    },
+    {
+      "title": "How can I help speed up my move?",
+      "content": "Curabitur aliquet quam id dui posuere blandit."
+    }
   ]
 }

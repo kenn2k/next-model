@@ -4,7 +4,11 @@ import data from "@/data.json";
 const Navigator = () => {
   const navBtn = data.navBtn;
   return (
-    <Box display="flex" justifyContent="space-between" marginBottom={4}>
+    <Box
+      sx={{ display: { xs: "none", lg: "flex" } }}
+      justifyContent="space-between"
+      marginBottom={4}
+    >
       {navBtn.map((btn) => (
         <Button variant="contained" color="success" key={btn.id}>
           {btn.title}

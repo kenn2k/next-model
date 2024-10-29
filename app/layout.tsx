@@ -9,6 +9,7 @@ import "@fontsource/roboto/700.css";
 import { StyledRoot } from "@/StyledRoot";
 import Navbar from "@/components/navbar/Navbar";
 import { Poppins } from "next/font/google";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Next-model",
@@ -33,7 +34,7 @@ export default function RootLayout({
           <StyledRoot>
             <Navbar />
             <main>{children}</main>
-            <footer></footer>
+            <Footer />
           </StyledRoot>
         </AppRouterCacheProvider>
       </body>

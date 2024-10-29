@@ -1,3 +1,5 @@
+"use client";
+import MobileMenu from "@/components/navbar/MobileMenu";
 import {
   AppBar,
   Box,
@@ -7,11 +9,21 @@ import {
   MenuItem,
   Toolbar,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
-
+import { useState } from "react";
+import { Menu as MenuIcon } from "@mui/icons-material";
 const pages = ["Services", "Pricing", "FAQ", "Company"];
 
 const Navbar = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setDrawerOpen(!drawerOpen);
+  };
   return (
     <AppBar
       position="static"
@@ -36,35 +48,60 @@ const Navbar = () => {
           >
             ConcordMoving
           </Typography>
+          {isMobile ? (
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "flex-end",
+                flex: 1,
+              }}
+            >
+              <Button onClick={handleDrawerToggle} color="info">
+                <MenuIcon />
+              </Button>
+              <MobileMenu
+                open={drawerOpen}
+                onClose={handleDrawerToggle}
+                pages={pages}
+              />
+            </Box>
+          ) : (
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                flexGrow: 1,
+                justifyContent: "center",
+              }}
+            >
+              {pages.map((item) => (
+                <Box key={item}>
+                  <Button color="info">Menu {item}</Button>
+                  <Menu
+                    open={false}
+                    MenuListProps={{
+                      "aria-labelledby": "basic-button",
+                    }}
+                  >
+                    <MenuItem>Option 1</MenuItem>
+                    <MenuItem>Option 2</MenuItem>
+                    <MenuItem>Option 3</MenuItem>
+                  </Menu>
+                </Box>
+              ))}
+            </Box>
+          )}
           <Box
             sx={{
-              display: { xs: "none", md: "flex" },
-              gap: 2,
-              flexGrow: 1,
-              justifyContent: "center",
+              alignItems: "center",
+              gap: "1rem",
+              display: { xs: "none", lg: "flex" },
             }}
           >
-            {pages.map((item) => (
-              <Box key={item}>
-                <Button color="info">Menu {item}</Button>
-                <Menu
-                  open={false}
-                  MenuListProps={{
-                    "aria-labelledby": "basic-button",
-                  }}
-                >
-                  <MenuItem>Option 1</MenuItem>
-                  <MenuItem>Option 2</MenuItem>
-                  <MenuItem>Option 3</MenuItem>
-                </Menu>
-              </Box>
-            ))}
-          </Box>
-          <Box sx={{ display: "flex", alignItems: "center", gap: "1rem" }}>
             <Typography color="info" sx={{ marginRight: 2 }}>
               +1 232 232 454
             </Typography>
-
             <Button
               sx={{
                 paddingX: 3,

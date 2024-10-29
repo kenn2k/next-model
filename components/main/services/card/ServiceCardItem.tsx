@@ -43,6 +43,7 @@ const ServiceCardItem = ({
             sx={{
               fontSize: { xs: "1rem", sm: "1.2rem" },
               lineHeight: 1,
+              fontWeight: { sm: 400, lg: 500 },
               color: "info.main",
               marginBottom: { xs: 1, sm: 2 },
             }}

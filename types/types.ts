@@ -11,3 +11,10 @@ export type CardProps = {
   description: string;
   title: string;
 };
+
+export type ReviewProps = {
+  id?: number;
+  content: string;
+  title: string;
+  author: string;
+};
