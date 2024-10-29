@@ -1,29 +1,18 @@
 import WorkflowCard from "@/components/main/workflow/card/WorkflowCard";
 import Slider from "@/components/main/workflow/slider/Slider";
-import { Box, CardMedia, Typography } from "@mui/material";
+import SectionLayout from "@/UI/Layout";
+import { CardMedia } from "@mui/material";
 
 const Workflow = () => {
   return (
     <>
-      <Box height="100%" position="relative" mt={14}>
-        <Typography
-          variant="h3"
-          sx={{ typography: { xs: "h4", md: "h3" } }}
-          lineHeight={1}
-          color="info"
-          fontWeight="500"
-        >
-          How We Work
-        </Typography>
-        <Typography
-          variant="h6"
-          sx={{ typography: { xs: "body1", md: "h6" } }}
-          lineHeight={1}
-          marginBottom={3}
-          color="info"
-        >
-          Process: From Planning to Delivery, Moving Simplified.
-        </Typography>
+      <SectionLayout
+        title="How We Work"
+        subtitle="Process: From Planning to Delivery, Moving Simplified."
+        fullHeight={false}
+        position={true}
+        marginTop={14}
+      >
         <CardMedia
           sx={{
             position: "absolute",
@@ -39,8 +28,8 @@ const Workflow = () => {
           alt="image"
         />
         <WorkflowCard />
-      </Box>
-      <Slider />
+        <Slider />
+      </SectionLayout>
     </>
   );
 };
