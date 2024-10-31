@@ -1,30 +1,5 @@
+import { CardItemProps, UniversalCardLayoutProps } from "@/types/types";
 import { Box, Button, Card } from "@mui/material";
-
-interface CardItemProps {
-  id: string | number;
-  title: string;
-  description?: string;
-  content?: string;
-  author?: string;
-}
-
-type CardVariant = "benefits" | "reviews" | "workflow";
-
-interface UniversalCardLayoutProps {
-  variant: CardVariant;
-  data: CardItemProps[] | { [key: string]: CardItemProps[] };
-  CardItemComponent: React.FC<any>;
-  containerProps?: {
-    mt?: number;
-    gap?: number;
-    maxWidth?: string | number;
-    display?: { [key: string]: string };
-  };
-  buttonProps?: {
-    text?: string;
-    sx?: object;
-  };
-}
 
 const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
   variant,
@@ -57,7 +32,7 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
             display: "flex",
             gap: 3,
             flexDirection: "column",
-            borderRadius: 4,
+            borderRadius: 8,
             maxWidth: "500px",
           }}
         >
@@ -72,7 +47,7 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
         <Card
           sx={{
             padding: 3,
-            borderRadius: 4,
+            borderRadius: 8,
             maxWidth: "500px",
             display: "flex",
             gap: 3,
@@ -124,7 +99,7 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
             alignItems: "center",
             width: "100%",
             maxWidth: "905px",
-            borderRadius: 4,
+            borderRadius: 8,
             padding: 3,
             flexDirection: { xs: "column", md: "row" },
           }}
@@ -142,7 +117,7 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
             sx={{
               width: 302,
               height: 302,
-              borderRadius: 4,
+              borderRadius: 8,
               backgroundColor: "grey.300",
               mt: { xs: 2, md: 0 },
             }}
@@ -154,7 +129,7 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
             alignItems: "center",
             width: "100%",
             maxWidth: "905px",
-            borderRadius: 4,
+            borderRadius: 8,
             padding: 2,
             mt: 8,
             flexDirection: { xs: "column", md: "row" },
@@ -164,7 +139,7 @@ const UniversalCardLayout: React.FC<UniversalCardLayoutProps> = ({
             sx={{
               width: 302,
               height: 302,
-              borderRadius: 4,
+              borderRadius: 8,
               backgroundColor: "grey.300",
               mb: { xs: 2, md: 0 },
             }}

@@ -1,6 +1,5 @@
 import { CardProps } from "@/types/types";
 import { Box, Typography } from "@mui/material";
-import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import Image from "next/image";
 interface IconsType {
   [key: string]: JSX.Element;

@@ -8,7 +8,7 @@ const Slider = () => {
         sx={{
           width: 302,
           height: 302,
-          borderRadius: 4,
+          borderRadius: 8,
           backgroundColor: "grey.300",
         }}
       />

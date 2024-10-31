@@ -31,7 +31,11 @@ const Reviews = () => {
       </Typography>
       <ReviewsCard />
       <Pagination
-        sx={{ display: "flex", justifyContent: "center", mt: 4 }}
+        sx={{
+          display: { xs: "none", lg: "flex" },
+          justifyContent: "center",
+          mt: 4,
+        }}
         count={10}
       />
       <Cases />

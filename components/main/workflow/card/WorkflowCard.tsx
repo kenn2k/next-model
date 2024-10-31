@@ -1,6 +1,5 @@
 import WorkFlowCardItem from "@/components/main/workflow/card/WorkFlowCardItem";
-import { CardProps } from "@/types/types";
-import { Box, Card } from "@mui/material";
+
 import data from "@/data.json";
 import UniversalCardLayout from "@/UI/Card";
 

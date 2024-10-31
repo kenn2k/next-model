@@ -10,7 +10,7 @@ const ReviewsCardItem = ({ content, author, title }: ReviewProps) => {
         width: "354px",
         height: "363px",
         flexShrink: 0,
-        borderRadius: 4,
+        borderRadius: 8,
       }}
       border={1}
     >

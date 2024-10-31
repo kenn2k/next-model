@@ -1,8 +1,6 @@
 import BenefitsCard from "@/components/main/benefits/card/BenefitsCard";
 import BenefitsVideo from "@/components/main/benefits/video/BenefitsVideo";
 import SectionLayout from "@/UI/Layout";
-import { Box, Typography } from "@mui/material";
-import React from "react";
 
 const Benefits = () => {
   return (

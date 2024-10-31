@@ -1,8 +1,9 @@
 import Accordion from "@mui/material/Accordion";
 import data from "@/data.json";
 import AccordionSummary from "@mui/material/AccordionSummary";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import { AccordionDetails, Box, Typography } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
 const accordionData = data.accordionData;
 const Accordions = () => {
   return (
@@ -12,7 +13,7 @@ const Accordions = () => {
           <AccordionSummary
             id={`accordion-summary-${index}`}
             aria-controls={`accordion-content-${index}`}
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<AddIcon />}
           >
             <Typography color="info.main">{item.title}</Typography>
           </AccordionSummary>

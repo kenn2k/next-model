@@ -202,5 +202,87 @@
       "title": "How can I help speed up my move?",
       "content": "Curabitur aliquet quam id dui posuere blandit."
     }
+  ],
+
+  "services": [
+    {
+      "id": 1,
+      "title": "Apartment and House Moving"
+    },
+    {
+      "id": 2,
+      "title": "Local Moving"
+    },
+    {
+      "id": 3,
+      "title": "Long-Distance Moving"
+    },
+    {
+      "id": 4,
+      "title": "Senior Moving"
+    },
+    {
+      "id": 5,
+      "title": "Military Moving"
+    },
+    {
+      "id": 6,
+      "title": "Celebrity Moving"
+    },
+    {
+      "id": 7,
+      "title": "Office & Business Moving"
+    },
+    {
+      "id": 8,
+      "title": "Furniture Moving"
+    },
+    {
+      "id": 9,
+      "title": "Packing Services"
+    },
+    {
+      "id": 10,
+      "title": "Full-Service Moving"
+    },
+    {
+      "id": 11,
+      "title": "Last-Minute Moving"
+    },
+    {
+      "id": 12,
+      "title": "Same-Day Moving"
+    }
+  ],
+
+  "companies": [
+    {
+      "id": 1,
+      "title": "Pricing"
+    },
+    {
+      "id": 2,
+      "title": "FAQ"
+    },
+    {
+      "id": 3,
+      "title": "About us"
+    },
+    {
+      "id": 4,
+      "title": "License"
+    },
+    {
+      "id": 5,
+      "title": "Cases"
+    },
+    {
+      "id": 6,
+      "title": "Blog"
+    },
+    {
+      "id": 7,
+      "title": "Contacts"
+    }
   ]
 }

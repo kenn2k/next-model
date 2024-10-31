@@ -14,6 +14,15 @@ const theme = createTheme({
   typography: {
     fontFamily: poppins.style.fontFamily,
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "capitalize",
+        },
+      },
+    },
+  },
   palette: {
     primary: {
       main: "#FF881A",

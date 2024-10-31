@@ -1,9 +1,23 @@
-import { Box, Container, Link, Typography } from "@mui/material";
+"use client";
+import {
+  Box,
+  Container,
+  Divider,
+  Link,
+  Theme,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+
+import CompanyInfo from "@/components/footer/CompanyInfo";
+import Services from "@/components/footer/Services";
+import Contact from "@/components/footer/Contact";
+import Company from "@/components/footer/Company";
 const Footer = () => {
+  const isSmallScreen = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
   return (
     <Container maxWidth="lg">
       <Box
@@ -17,105 +31,35 @@ const Footer = () => {
           padding: 4,
         }}
       >
-        <Grid container spacing={4}>
+        <Grid container spacing={5}>
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-            <Typography variant="h6">Concord Moving</Typography>
-            <Typography>
-              Your Trusted Partner for a Stress-Free Moving Experience
-            </Typography>
-            <Box sx={{ display: "flex", gap: 1, marginTop: 2 }}>
-              <FacebookIcon />
-              <TwitterIcon />
-              <InstagramIcon />
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <Typography variant="caption">
-                UBI #60011878 <br /> UTC: THG056947 <br /> DOT No. 3246649
-              </Typography>
-            </Box>
+            <CompanyInfo />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-            <Typography variant="h6">Services</Typography>
-            <Box sx={{ color: "info.main" }}>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Apartment and House Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Local Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Long-Distance Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Senior Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Military Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Celebrity Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Office & Business Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Furniture Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Packing Services
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Full-Service Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Last-Minute Moving
-              </Link>
-              <Link href="#" color="inherit" underline="none" display="block">
-                Same-Day Moving
-              </Link>
-            </Box>
+            <Services isSmallScreen={isSmallScreen} />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-            <Typography variant="h6">Company</Typography>
-            <Box>
-              <Link href="#" underline="none" color="inherit" display="block">
-                Pricing
-              </Link>
-              <Link href="#" underline="none" color="inherit" display="block">
-                FAQ
-              </Link>
-              <Link href="#" underline="none" color="inherit" display="block">
-                About us
-              </Link>
-              <Link href="#" underline="none" color="inherit" display="block">
-                License
-              </Link>
-              <Link href="#" underline="none" color="inherit" display="block">
-                Cases
-              </Link>
-              <Link href="#" underline="none" color="inherit" display="block">
-                Blog
-              </Link>
-              <Link href="#" color="inherit" display="block">
-                Contacts
-              </Link>
-            </Box>
+            <Company isSmallScreen={isSmallScreen} />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-            <Typography variant="h6">Contact Information</Typography>
-            <Box>
-              <Typography>Phone number: +1 232 232 454</Typography>
-              <Typography>Address: Seattle, Street, 1</Typography>
-              <Typography>Email: email@email.com</Typography>
-              <Typography>Working hours: 8am-5pm, Mon-Sun</Typography>
-            </Box>
+            <Contact isSmallScreen={isSmallScreen} />
           </Grid>
         </Grid>
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            mt: { xs: "1rem", lg: "none" },
+            flexDirection: "column",
+          }}
+        >
+          <Typography variant="body2">
+            Fully licensed and insured company:
+          </Typography>
+          <Typography variant="caption">
+            UBI #60011878 <br /> UTC: THG056947 <br /> DOT No. 3246649
+          </Typography>
+        </Box>
+        <Divider sx={{ color: "#FBFCFC", mt: "1rem" }} />
         <Box
           sx={{
             display: "flex",

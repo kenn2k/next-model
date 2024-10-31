@@ -10,8 +10,7 @@ const FAQ = () => {
       mt={14}
       p={4}
       sx={{
-        background:
-          "linear-gradient(90deg, rgba(251,240,212,1) 0%, rgba(216,224,246,1) 100%)",
+        background: "linear-gradient(90deg, #faf1ed 0%, #fadbc1 100%)",
         borderRadius: 8,
         flexDirection: { xs: "column", sm: "row" },
       }}
@@ -43,18 +42,26 @@ const FAQ = () => {
           Answers to Your Most Common Moving Questions
         </Typography>
         <Typography
-          sx={{ typography: { xs: "body2", md: "body1" } }}
+          sx={{
+            typography: { xs: "body2", md: "body1" },
+            display: { xs: "none", md: "block" },
+          }}
           variant="body1"
           color="info"
           mt={2}
         >
-          Need more information? Reach us at +1 232 232 454 <br /> or
+          Need more information? <br /> Reach us at <b>+1 232 232 454</b> <br />{" "}
+          or
         </Typography>
-        <Box display="flex" gap={2} alignItems="center">
+        <Box
+          sx={{ display: { xs: "none", md: "flex" } }}
+          gap={2}
+          alignItems="center"
+        >
           <Button
             sx={{
               backgroundColor: "primary.main",
-              borderRadius: 4,
+              borderRadius: 8,
               color: "white",
             }}
           >
@@ -65,6 +72,35 @@ const FAQ = () => {
       </Box>
       <Box height="100%" sx={{ flex: 1, mt: { xs: 3, sm: 0 } }}>
         <Accordions />
+        <Typography
+          sx={{
+            typography: { xs: "body2", md: "body1" },
+            display: { xs: "block", md: "none" },
+          }}
+          variant="body1"
+          color="info"
+          mt={2}
+        >
+          Need more information? <br /> Reach us at <b>+1 232 232 454</b> <br />{" "}
+          or
+        </Typography>
+        <Box
+          display="flex"
+          sx={{ display: { xs: "flex", md: "none" } }}
+          gap={2}
+          alignItems="center"
+        >
+          <Button
+            sx={{
+              backgroundColor: "primary.main",
+              borderRadius: 8,
+              color: "white",
+            }}
+          >
+            Contact
+          </Button>
+          <Typography color="info">for personalized support.</Typography>
+        </Box>
       </Box>
     </Box>
   );

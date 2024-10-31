@@ -9,16 +9,17 @@ const ServiceCardItem = ({
   title,
 }: ServiceCardProps) => {
   return (
-    <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+    <Grid container justifyContent="center" size={{ xs: 12, sm: 6, md: 4 }}>
       <Card
         sx={{
           height: "100%",
+          maxWidth: { xs: "340px", lg: "100%" },
           padding: { xs: 1, sm: 2 },
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
           boxShadow: 3,
-          borderRadius: 4,
+          borderRadius: 8,
           position: "relative",
         }}
       >
