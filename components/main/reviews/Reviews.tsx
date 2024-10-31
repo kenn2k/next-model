@@ -14,7 +14,6 @@ const Reviews = () => {
           sx={{ typography: { xs: "h4", md: "h3" } }}
           variant="h3"
           lineHeight={1}
-          color="info"
         >
           Testimonials
         </Typography>
@@ -25,12 +24,12 @@ const Reviews = () => {
         sx={{ typography: { xs: "body1", md: "h6" } }}
         lineHeight={2}
         marginBottom={3}
-        color="info"
       >
         See What Our Happy Customers Have to Say.
       </Typography>
       <ReviewsCard />
       <Pagination
+        color="info"
         sx={{
           display: { xs: "none", lg: "flex" },
           justifyContent: "center",

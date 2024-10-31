@@ -25,7 +25,6 @@ const Cases = () => {
         }}
       >
         <Typography
-          color="info"
           variant="h3"
           sx={{
             fontWeight: { xs: 400, lg: 500 },
@@ -35,7 +34,6 @@ const Cases = () => {
           Cases
         </Typography>
         <Typography
-          color="info"
           variant="h6"
           mt={2}
           sx={{ typography: { xs: "body1", md: "h6" } }}
@@ -43,7 +41,6 @@ const Cases = () => {
           Real Stories of Successful Moves with Our Expert Team
         </Typography>
         <Typography
-          color="info"
           sx={{ typography: { xs: "body2", md: "body1" } }}
           variant="body1"
           mt={2}
@@ -53,7 +50,7 @@ const Cases = () => {
           seamless local moves, our expert team delivers exceptional results
           every time.
         </Typography>
-        <Link color="success" sx={{ mt: "auto", alignSelf: "flex-start" }}>
+        <Link color="success.main" sx={{ mt: "auto", alignSelf: "flex-start" }}>
           Learn More
         </Link>
       </Box>

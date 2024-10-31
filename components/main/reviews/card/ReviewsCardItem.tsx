@@ -15,17 +15,11 @@ const ReviewsCardItem = ({ content, author, title }: ReviewProps) => {
       border={1}
     >
       <Rating name="read-only" value={5} readOnly />
-      <Typography
-        color="info"
-        sx={{ fontWeight: { sm: 400, lg: 500 } }}
-        variant="h5"
-      >
+      <Typography sx={{ fontWeight: { sm: 400, lg: 500 } }} variant="h5">
         &ldquo;{title}&rdquo;
       </Typography>
-      <Typography color="info" variant="body1">
-        {content}
-      </Typography>
-      <Typography color="info" textAlign="end" fontWeight="600" variant="body1">
+      <Typography variant="body1">{content}</Typography>
+      <Typography textAlign="end" fontWeight="600" variant="body1">
         {author}
       </Typography>
     </Box>

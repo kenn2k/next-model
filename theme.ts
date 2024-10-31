@@ -10,6 +10,12 @@ const poppins = Poppins({
   display: "swap",
 });
 
+declare module "@mui/material/Pagination" {
+  interface PaginationPropsColorOverrides {
+    info: true;
+  }
+}
+
 const theme = createTheme({
   typography: {
     fontFamily: poppins.style.fontFamily,
@@ -22,7 +28,15 @@ const theme = createTheme({
         },
       },
     },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#343A40",
+        },
+      },
+    },
   },
+
   palette: {
     primary: {
       main: "#FF881A",

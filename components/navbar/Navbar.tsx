@@ -96,7 +96,7 @@ const Navbar = () => {
             sx={{
               alignItems: "center",
               gap: "1rem",
-              display: { xs: "none", lg: "flex" },
+              display: { xs: "none", md: "flex" },
             }}
           >
             <Typography color="info" sx={{ marginRight: 2 }}>

@@ -24,7 +24,6 @@ const FAQ = () => {
         }}
       >
         <Typography
-          color="info"
           variant="h3"
           sx={{
             fontWeight: { xs: 400, lg: 500 },
@@ -34,7 +33,6 @@ const FAQ = () => {
           FAQ
         </Typography>
         <Typography
-          color="info"
           variant="h6"
           mt={2}
           sx={{ typography: { xs: "body1", md: "h6" } }}
@@ -47,7 +45,6 @@ const FAQ = () => {
             display: { xs: "none", md: "block" },
           }}
           variant="body1"
-          color="info"
           mt={2}
         >
           Need more information? <br /> Reach us at <b>+1 232 232 454</b> <br />{" "}
@@ -67,7 +64,7 @@ const FAQ = () => {
           >
             Contact
           </Button>
-          <Typography color="info">for personalized support.</Typography>
+          <Typography>for personalized support.</Typography>
         </Box>
       </Box>
       <Box height="100%" sx={{ flex: 1, mt: { xs: 3, sm: 0 } }}>
@@ -78,7 +75,6 @@ const FAQ = () => {
             display: { xs: "block", md: "none" },
           }}
           variant="body1"
-          color="info"
           mt={2}
         >
           Need more information? <br /> Reach us at <b>+1 232 232 454</b> <br />{" "}
@@ -99,7 +95,7 @@ const FAQ = () => {
           >
             Contact
           </Button>
-          <Typography color="info">for personalized support.</Typography>
+          <Typography>for personalized support.</Typography>
         </Box>
       </Box>
     </Box>

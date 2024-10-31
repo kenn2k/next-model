@@ -8,6 +8,7 @@ import {
   ListItemButton,
   ListItemText,
 } from "@mui/material";
+import PhoneIcon from "@mui/icons-material/Phone";
 interface MobileMenuProps {
   open: boolean;
   onClose: () => void;
@@ -32,7 +33,12 @@ const MobileMenu = ({ open, onClose, pages }: MobileMenuProps) => {
           {pages.map((page) => (
             <ListItem key={page} disablePadding>
               <ListItemButton>
-                <ListItemText primary={page} />
+                <ListItemText
+                  sx={{
+                    color: (theme) => theme.palette.info.main,
+                  }}
+                  primary={page}
+                />
               </ListItemButton>
             </ListItem>
           ))}
@@ -51,7 +57,10 @@ const MobileMenu = ({ open, onClose, pages }: MobileMenuProps) => {
               paddingY: 1,
               border: 1,
               borderRadius: 8,
+              borderColor: "success.main",
+              color: "info.main",
             }}
+            startIcon={<PhoneIcon />}
           >
             Call
           </Button>

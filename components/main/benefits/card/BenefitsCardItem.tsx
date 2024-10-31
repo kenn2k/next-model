@@ -76,7 +76,6 @@ const BenefitsCardItem = ({ description, title }: CardProps) => {
           </Box>
         )}
         <Typography
-          color="info"
           component="div"
           fontWeight="500"
           sx={{
@@ -88,13 +87,7 @@ const BenefitsCardItem = ({ description, title }: CardProps) => {
           {title}
         </Typography>
       </Box>
-      <Typography
-        color="info"
-        variant="body1"
-        component="div"
-        lineHeight={1.5}
-        mb={1.5}
-      >
+      <Typography variant="body1" component="div" lineHeight={1.5} mb={1.5}>
         {description}
       </Typography>
     </Box>

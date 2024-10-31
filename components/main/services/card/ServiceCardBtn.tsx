@@ -17,7 +17,7 @@ const CardBtn = () => {
       </Button>
       <Link
         href="#"
-        color="success"
+        color="success.main"
         sx={{ fontSize: { xs: "0.8rem", sm: "0.9rem" } }}
       >
         Learn More

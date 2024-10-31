@@ -3,11 +3,7 @@ import { Box, Typography } from "@mui/material";
 const BenefitsVideo = () => {
   return (
     <Box marginTop={14}>
-      <Typography
-        color="info"
-        sx={{ typography: { xs: "h4", md: "h3" } }}
-        variant="h3"
-      >
+      <Typography sx={{ typography: { xs: "h4", md: "h3" } }} variant="h3">
         Watch How We Make Moving Easier
       </Typography>
       <Box

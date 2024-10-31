@@ -1,7 +1,11 @@
-import React from "react";
+import { Container } from "@mui/material";
 
 const MovingPage = () => {
-  return <div>MovingPage</div>;
+  return (
+    <>
+      <Container maxWidth="lg"></Container>
+    </>
+  );
 };
 
 export default MovingPage;

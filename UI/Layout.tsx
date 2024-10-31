@@ -28,7 +28,6 @@ const SectionLayout: React.FC<ISectionLayoutProps> = ({
         fontWeight="500"
         sx={{ typography: { xs: "h4", md: "h3" } }}
         lineHeight={1}
-        color="info"
       >
         {title}
       </Typography>
@@ -37,7 +36,6 @@ const SectionLayout: React.FC<ISectionLayoutProps> = ({
         sx={{ typography: { xs: "body1", md: "h6" } }}
         lineHeight={2}
         marginBottom={3}
-        color="info"
       >
         {subtitle}
       </Typography>

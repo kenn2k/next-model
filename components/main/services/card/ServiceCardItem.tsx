@@ -30,7 +30,7 @@ const ServiceCardItem = ({
             left: 0,
             right: 0,
             height: "8px",
-            backgroundColor: "#FFD231",
+            backgroundColor: "secondary.main",
             zIndex: 1,
             borderTopLeftRadius: 8,
             borderTopRightRadius: 8,
@@ -54,7 +54,6 @@ const ServiceCardItem = ({
           <Typography
             variant="body2"
             sx={{
-              color: "text.secondary",
               fontSize: { xs: "0.9rem", sm: "1rem" },
               marginBottom: { xs: 1, sm: 2 },
             }}
