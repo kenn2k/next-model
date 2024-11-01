@@ -5,8 +5,6 @@ import {
   Box,
   Button,
   Container,
-  Menu,
-  MenuItem,
   Toolbar,
   Typography,
   useMediaQuery,
@@ -27,7 +25,7 @@ const Navbar = () => {
   return (
     <AppBar
       position="static"
-      className="mt-16"
+      className="mt-10"
       color="transparent"
       elevation={0}
     >
@@ -41,7 +39,7 @@ const Navbar = () => {
       >
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
           <Typography
-            variant="h6"
+            variant="body1"
             noWrap
             color="info"
             sx={{ mr: 2, fontWeight: "bold" }}
@@ -77,17 +75,9 @@ const Navbar = () => {
             >
               {pages.map((item) => (
                 <Box key={item}>
-                  <Button color="info">Menu {item}</Button>
-                  <Menu
-                    open={false}
-                    MenuListProps={{
-                      "aria-labelledby": "basic-button",
-                    }}
-                  >
-                    <MenuItem>Option 1</MenuItem>
-                    <MenuItem>Option 2</MenuItem>
-                    <MenuItem>Option 3</MenuItem>
-                  </Menu>
+                  <Button sx={{ fontSize: "1rem" }} color="info">
+                    {item}
+                  </Button>
                 </Box>
               ))}
             </Box>

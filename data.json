@@ -284,5 +284,47 @@
       "id": 7,
       "title": "Contacts"
     }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "title": "Estimate Costs ",
+      "content": "Get a customized moving quote quickly by using our online calculator. Book your preferred moving date early to secure availability and avoid peak pricing."
+    },
+    {
+      "id": 2,
+      "title": "Create a Moving Timeline",
+      "content": "Break down each task by week to manage steps like packing, utility shut-off scheduling, and final move confirmations. This helps reduce last-minute stress."
+    },
+    {
+      "id": 3,
+      "title": "Organize and Begin Packing ",
+      "content": "Pack room by room, labeling each box by room for easy unpacking. Or, save time with our professional packing service for secure handling."
+    },
+    {
+      "id": 4,
+      "title": "Arrange Child or Pet Care",
+      "content": "Our expert movers carefully pack your items using top-quality materials."
+    },
+    {
+      "id": 5,
+      "title": "Measure Doorways and Furniture",
+      "content": "Confirm that furniture will fit through doorways, staircases, and hallways in the new location."
+    },
+    {
+      "id": 6,
+      "title": "Disconnect and Prepare Appliances",
+      "content": "Unplug and secure cables for electronics, and clean appliances before the move."
+    },
+    {
+      "id": 7,
+      "title": "Schedule a Final Walkthrough",
+      "content": "Do a final sweep of your old home to check for forgotten items and any last-minute cleaning needs."
+    },
+    {
+      "id": 8,
+      "title": "Notify Utility Providers and Change Address",
+      "content": "Update utilities, subscriptions, and mailing address before moving day to ensure a smooth transition."
+    }
   ]
 }

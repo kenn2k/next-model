@@ -19,6 +19,12 @@ declare module "@mui/material/Pagination" {
 const theme = createTheme({
   typography: {
     fontFamily: poppins.style.fontFamily,
+    h3: {
+      fontWeight: 500,
+    },
+    h6: {
+      fontWeight: 400,
+    },
   },
   components: {
     MuiButton: {

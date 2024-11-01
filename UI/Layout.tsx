@@ -9,14 +9,14 @@ interface ISectionLayoutProps {
   position?: boolean;
   marginTop?: number;
 }
-const SectionLayout: React.FC<ISectionLayoutProps> = ({
+const SectionLayout = ({
   title,
   subtitle,
   children,
   fullHeight = false,
   position = false,
   marginTop = 0,
-}) => {
+}: ISectionLayoutProps) => {
   return (
     <Box
       height={fullHeight ? "calc(100vh - 88px)" : "100%"}
@@ -25,7 +25,6 @@ const SectionLayout: React.FC<ISectionLayoutProps> = ({
     >
       <Typography
         variant="h3"
-        fontWeight="500"
         sx={{ typography: { xs: "h4", md: "h3" } }}
         lineHeight={1}
       >

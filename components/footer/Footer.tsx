@@ -23,12 +23,12 @@ const Footer = () => {
       <Box
         mt={14}
         mb={4}
+        p={4}
         sx={{
           background:
             "linear-gradient(90deg, rgba(251,240,212,1) 0%, rgba(216,224,246,1) 100%)",
           borderRadius: 8,
           color: "info.main",
-          padding: 4,
         }}
       >
         <Grid container spacing={5}>

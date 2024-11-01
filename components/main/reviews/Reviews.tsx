@@ -10,7 +10,6 @@ const Reviews = () => {
     <Box height="100%" mt={14}>
       <Box display="flex" justifyContent="space-between" alignContent="center">
         <Typography
-          fontWeight="500"
           sx={{ typography: { xs: "h4", md: "h3" } }}
           variant="h3"
           lineHeight={1}

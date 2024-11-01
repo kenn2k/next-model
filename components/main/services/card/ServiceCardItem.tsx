@@ -36,16 +36,14 @@ const ServiceCardItem = ({
             borderTopRightRadius: 8,
           }}
         />
-        <CardContent sx={{ paddingBottom: 1 }}>
+        <CardContent>
           <Typography
-            gutterBottom
             variant="h6"
             component="div"
+            fontWeight={500}
             sx={{
-              fontSize: { xs: "1rem", sm: "1.2rem" },
               lineHeight: 1,
-              fontWeight: { sm: 400, lg: 500 },
-              color: "info.main",
+
               marginBottom: { xs: 1, sm: 2 },
             }}
           >
@@ -54,7 +52,6 @@ const ServiceCardItem = ({
           <Typography
             variant="body2"
             sx={{
-              fontSize: { xs: "0.9rem", sm: "1rem" },
               marginBottom: { xs: 1, sm: 2 },
             }}
           >
@@ -65,9 +62,10 @@ const ServiceCardItem = ({
             component="ul"
             sx={{
               listStyleType: "disc",
-              paddingLeft: 2,
+              paddingLeft: 3,
+              lineHeight: 2,
               marginBottom: { xs: 1, sm: 2 },
-              fontSize: { xs: "0.8rem", sm: "0.9rem" },
+
               color: "info.main",
             }}
           >

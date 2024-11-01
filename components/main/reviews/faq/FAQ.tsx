@@ -8,7 +8,7 @@ const FAQ = () => {
       display="flex"
       height="100%"
       mt={14}
-      p={4}
+      p={3}
       sx={{
         background: "linear-gradient(90deg, #faf1ed 0%, #fadbc1 100%)",
         borderRadius: 8,

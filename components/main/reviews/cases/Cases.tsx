@@ -8,7 +8,7 @@ const Cases = () => {
       display="flex"
       width="100%"
       mt={14}
-      p={4}
+      p={3}
       sx={{
         background:
           "linear-gradient(90deg, rgba(251,240,212,1) 0%, rgba(216,224,246,1) 100%)",
@@ -27,7 +27,7 @@ const Cases = () => {
         <Typography
           variant="h3"
           sx={{
-            fontWeight: { xs: 400, lg: 500 },
+            fontWeight: { xs: 400, md: 500 },
             typography: { xs: "h4", md: "h3" },
           }}
         >
